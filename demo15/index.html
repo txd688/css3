@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>径向渐变</title>
+  <style>
+    /* ellipse椭圆和circle圆形(默认) */
+    .ceng {
+      width: 100px;
+      border-radius: 50%;
+      height: 100px;
+      background: red;
+      background-image: radial-gradient(red, yellow, green);
+    }
+
+    .ceng2 {
+      width: 100px;
+      border-radius: 50%;
+      height: 100px;
+      background: red;
+      background-image: radial-gradient(ellipse at right, red, yellow, green);
+    }
+
+    .ceng3 {
+      background-image: radial-gradient(40px 20px ellipse, red, green);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ceng"></div>
+  <div class="ceng2"></div>
+  <div class="ceng ceng3 "></div>
+  <div class="ceng4"></div>
+  <div class="ceng5"></div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五角星和六角形</title>
+  <style>
+    /* 
+    正五角星可以由特殊角度的三角形绕五角星外接圆圆心经过旋转72°与-72°而实现。
+    这里有两大三角形和一个小三角形组成
+    大三角形的角度分别为 36、36、108 边长  217.08px、134.16px、134.16px。。
+     */
+    .star {
+      width: 0;
+      height: 0;
+      border-bottom: 54.27px solid red;
+      border-right: 33.54px solid transparent;
+      border-left: 33.54px solid transparent;
+      margin: 80px auto;
+      position: relative;
+      /* transform: rotate(35deg); */
+    }
+
+    /* .star::before {
+      content: "";
+      border-bottom: 80px solid red;
+      border-right: 30px solid transparent;
+      border-left: 30px solid transparent;
+      position: absolute;
+      left: -60px;
+      transform: rotate(-35deg);
+      top: -40px;
+    }
+
+    .star::after {
+      content: "";
+      border-bottom: 70px solid red;
+      border-right: 100px solid transparent;
+      border-left: 100px solid transparent;
+      position: absolute;
+      left: -107px;
+      transform: rotate(-70deg);
+      top: 5px;
+    } */
+
+    .star2 {
+      margin: 50px auto;
+      border-bottom: 70px solid red;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      width: 0;
+      height: 0;
+    }
+
+    .star2::after {
+      content: "";
+      margin: 50px auto;
+      border-bottom: 70px solid red;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      width: 0;
+      height: 0;
+      transform: rotate(-90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="star"></div>
+  <div class="star2"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .demo{
+      border: 1px solid #ccc;
+      width:200px;
+    }
+    .demo::first-letter{
+      font-size: 30px;
+      color: burlywood;
+      float: left;
+    }
+    .demo::first-line{
+      color: green;
+    }
+    
+
+    .demo1{
+      text-align: center;
+      width:100%;
+      margin-top: 40px;
+    }
+    .demo1::before{
+      /* 伪元素的content支持直接设置图片，但此时伪元素的width和height无法控制图片大小。 */
+      content:'';
+      display: block;
+      width:100%;
+      height: 100px;
+      background:url(./group.png);
+      background-size: cover;
+    }
+    .demo1::after{
+      content: url(./menuchild.png);
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- 首字母下沉 -->
+  <div class="demo">
+    她说：“太爷爷，如果真能回到梦里，再次见到您，我一定会大声地告诉您，您在就义前的狱中预见的一切，在新中国、新时代都更好地实现了，您和无数烈士们牺牲时的理想终达所愿。这盛世，可爱的中国，如您所愿。”
+  </div>
+
+  <div class="demo1">
+    CSS 伪元素
+  </div>
+</body>
+</html>

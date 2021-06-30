@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关键帧</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    .rect,
+    .rect2 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+      from {
+        top: 0;
+        left: 20%
+      }
+
+      to {
+        top: 0;
+        left: 80%
+      }
+    }
+
+    .rect2 {
+      animation: mymove2 4s infinite;
+    }
+
+    @keyframes mymove2 {
+      0% {
+        top: 10%;
+        left: 10%
+      }
+
+      25% {
+        top: 20%;
+        left: 20%;
+        background-color: blueviolet;
+      }
+
+      50% {
+        top: 80%;
+        left: 80%
+      }
+
+      100% {
+        top: 0;
+        left: 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rect"></div>
+  <div class="rect2"></div>
+</body>
+
+</html>

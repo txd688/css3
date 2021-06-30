@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画三角</title>
+  <style>
+    .demo{
+      border-top: 50px solid  red;
+      border-bottom: 50px solid green;
+      border-left: 50px solid  blue;
+      border-right: 50px solid  yellow;
+      width:0;
+      height: 0;
+      margin: 50px auto;
+    }
+
+    .demo2{
+      border-top: 0px solid  red;
+      border-bottom: 50px solid green;
+      border-left: 50px solid  transparent;
+      border-right: 50px solid  transparent;
+      width:0;
+      height: 0;
+      margin: 50px auto;
+    }
+
+    .demo3{
+      border-top: 50px solid  red;
+      border-bottom: 0px solid green;
+      border-left: 50px solid  transparent;
+      border-right: 50px solid  transparent;
+      width:0;
+      height: 0;
+      margin: 50px auto;
+    }
+
+    .demo4{
+      border-top: 50px solid  transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 50px solid  blue;
+      border-right: 0px solid  yellow;
+      width:0;
+      height: 0;
+      margin: 50px auto;
+    }
+    
+    .dialog{
+      background: #6a6;
+      border-radius: 5px;
+      width: 200px;
+      color: #fff;
+      margin: 0 auto;
+      position: relative;
+      padding: 15px;
+    }
+    .dialog::before{
+      content: '';
+      border-right: 10px #6a6 solid;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo"></div>
+  <div class="demo2"></div>
+  <div class="demo3"></div>
+  <div class="demo4"></div>
+
+  <div class="dialog">Hello word!</div>
+</body>
+</html>
