@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体溢出</title>
+  <style>
+    /* 单行超出出现省略号 */
+    .overOmitLine {
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      -webkit-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* 多行省略 */
+    .moreLine {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+
+    div {
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overOmitLine">咔咔咔咔咔咔扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩</div>
+</body>
+
+</html>
